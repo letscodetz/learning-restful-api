@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:9.5-alpine
+    container_name: postgres-pg-promise
+    restart: unless-stopped
+    volumes:
+      - "dbdata:/var/lib/postgresql/data"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=StrongPass@id8
+      - POSTGRES_DB=puppies
+    ports:
+      - "5432:5432"
+
+volumes:
+  dbdata:
+
+
+
+
+

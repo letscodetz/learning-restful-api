@@ -6,7 +6,7 @@ let options = {
 };
 
 let pgp = require('pg-promise')(options);
-let connectionString = 'postgres://postgres@localhost:5432/puppies';
+let connectionString = 'postgres://postgres:StrongPass@id8@localhost:5432/puppies';
 let db = pgp(connectionString);
 
 // add query functions
